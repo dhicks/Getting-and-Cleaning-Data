@@ -12,7 +12,7 @@ The script performs the following steps:
 
 1. `dplyr` is loaded.  If necessary, the data are downloaded and unzipped.  The data are downloaded as the file `smartphone_data.zip`, and unzipped to the folder `UCI HAR Dataset`.  
 
-2. A codebook is generated to identify the different activity types.  The activities are labeled as follows:  
+2. A runtime codebook is generated to identify the different activity types.  The activities are labeled as follows:  
 
 	1. walking
 	2. walking_upstairs
@@ -21,7 +21,7 @@ The script performs the following steps:
 	5. standing
 	6. laying
 	
-3. Columns in the dataset corresponding to means and standard deviations of dataset features are identified.  These columns are given quasi-human-readable names corresponding to the labels in the file `features_info.txt`.  See that file for an explanation of the features.  
+3. Columns in the dataset corresponding to means and standard deviations of dataset features are identified.  These columns are given quasi-human-readable names corresponding to the labels in the file `features_info.txt` (included in the unzipped data folder).  See that file, or `codebook.md` in this repository, for an explanation of the features.  
 
 4. The desired columns are read from the `test` and `train` datasets, along with the activity and research subject for each observation.  All of this is stored in the variable `data`.  
 
